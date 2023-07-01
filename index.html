@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+     .btn{
+       width:100px;
+       height:50px;
+       background-color: blue;
+       color:white;
+       margin:50px 20px 20px 2px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       border:2px solid black;
+       border-radius:20px;
+       
+       
+
+     }
+     .header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color:white;
+        height:40px;
+        
+     }
+     .btn:hover{
+        background-color: yellow;
+        color:black;
+        border:none;
+     }
+     .contents{
+        width:200px;
+        height:600px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: black;
+
+        
+        
+     }
+     #display{
+        width:500px;
+        height:500px;
+        background-color: black;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        color:white;
+        margin:auto;
+        font-size: 50px;
+     }
+     
+     
+     .main-content{
+        display:flex;
+       
+        
+     }
+     .Footer{
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      background-color: black;
+      color: white;
+      height:40px;
+     }
+
+    </style>
+</head>
+<body>
+    <div class="header"> Assignment</div>
+    <div class="main-content">
+    <div class="contents" >
+   
+    <div class="btn" onclick="Home()"> <a href="Home"></a>Home     </div>
+    <div class="btn" onclick="Contact()"> <a href="Contact"></a>Contacts</div>
+    <div class="btn" onclick="Information()"> <a href="Information"></a>Information</div>
+    <div class="btn" onclick="Guide()"> <a href="Guide"></a>Guide</div>
+    </div>
+   
+   
+    <div id="display">
+        <p id="display1">Hello</p>
+    </div>
+   </div>
+   <div class="Footer">Made By Aruj</div>
+    <script>
+    
+    function Home(){
+     let k=document.getElementById("display1");
+     k.innerText="Welcome to Home";
+     k.style.fontSize="50px";
+
+     
+    }
+    function Contact(){
+     let k=document.getElementById("display1");
+    
+     k.innerText="Welcome to Contact";
+     k.style.fontSize="50px";
+     
+     
+    }
+    function Information(){
+     let k=document.getElementById("display1");
+     k.innerText="Welcome to Information";
+     k.style.fontSize="50px";
+     
+    }
+    function Guide(){
+     let k=document.getElementById("display1");
+     k.innerText="Welcome to Guide";
+     k.style.fontSize="50px";
+     
+    }
+
+    </script>
+</body>
+</html>
